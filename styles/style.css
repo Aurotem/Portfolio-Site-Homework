@@ -129,11 +129,9 @@ li:hover .progress {
 @keyframes revealh {
   from {
     color: rgba(225, 232, 244, 0);
-
   }
   50% {
     color: rgba(225, 232, 244, 0);
-
   }
   to {
     color: rgba(225, 232, 244, 1);
@@ -143,11 +141,9 @@ li:hover .progress {
 @keyframes revealp {
   0% {
     color: rgba(225, 232, 244, 0);
-
   }
   75% {
     color: rgba(225, 232, 244, 0);
-
   }
   to {
     color: rgba(225, 232, 244, 1);
@@ -168,19 +164,62 @@ footer ul li {
   margin-left: 10px;
 }
 
-
 /*!-------------- ABOUT ME PAGE ------------------------------- */
 .container {
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                width: 60%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 }
 .about-me-message {
-                margin-bottom: 50px;
-                font-size: 50px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  animation: about-me-h 2s ease-out;
+  background: linear-gradient(
+      135deg,
+      rgb(225, 232, 244),
+      rgb(225, 232, 244),
+      transparent
+    )
+    no-repeat;
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .about-me-paragraph {
-                line-height: 25px;
-                font-size: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  animation: about-me-p 2s ease-out;
+  background: linear-gradient(
+      135deg,
+      rgb(225, 232, 244),
+      rgb(225, 232, 244),
+      transparent
+    )
+    no-repeat;
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes about-me-h {
+  from {
+    width: 0px;
+    background-position: 200% 300%;
+  }
+  to {
+    width: 236px;
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes about-me-p {
+  from {
+    background-position: 200% 200%;
+  }
+  to {
+    background-position: 0% 0%;
+  }
 }
