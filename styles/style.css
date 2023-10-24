@@ -63,7 +63,7 @@ li:hover .progress {
 
 /*! Welcome Section - Header */
 
-header {
+.welcome {
   height: 100dvh;
   display: flex;
   justify-content: center;
@@ -166,4 +166,21 @@ footer ul {
 }
 footer ul li {
   margin-left: 10px;
+}
+
+
+/*!-------------- ABOUT ME PAGE ------------------------------- */
+.container {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+}
+.about-me-message {
+                margin-bottom: 50px;
+                font-size: 50px;
+}
+.about-me-paragraph {
+                line-height: 25px;
+                font-size: 18px;
 }
