@@ -13,6 +13,8 @@ html {
 /*! Body  */
 body {
   font-family: sans-serif;
+  color: rgb(225, 232, 244);
+  background-color: black;
 }
 /*! Disabling the scrollbar */
 ::-webkit-scrollbar {
@@ -57,6 +59,8 @@ li:hover .progress {
 
 /* Nav End */
 
+/*! Constant classes */
+
 /*! Welcome Section - Header */
 
 header {
@@ -67,14 +71,13 @@ header {
   background: radial-gradient(ellipse at bottom, rgb(5, 54, 80), rgb(0, 8, 11));
 }
 .welcome-message {
-  color: rgb(225, 232, 244);
   font-size: 50px;
   -webkit-box-reflect: below 0px
     linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4));
   animation: moveToBottom 1s linear;
   animation-timeline: scroll();
 }
-header a {
+.scroll-down {
   color: rgb(225, 232, 244);
   text-decoration: none;
   position: absolute;
@@ -83,7 +86,7 @@ header a {
   animation: moveToBottom 1s linear;
   animation-timeline: scroll();
 }
-
+/*! Scroll down animation */
 @keyframes moveToBottom {
   0% {
     transform: translateY(0);
@@ -97,8 +100,70 @@ header a {
   }
 }
 
-/*! İnfo about me */
+/*! Info about me */
 .who-am-i {
+  padding: 10%;
   height: 100vh;
   background: radial-gradient(ellipse at top, rgb(5, 54, 80), rgb(0, 8, 11));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.who-am-i p {
+  font-size: 20px;
+}
+.who-am-i h1 {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+.wai-header {
+  animation: revealh 2s ease-out;
+  animation-timeline: scroll();
+}
+.wai-p {
+  animation: revealp 2s ease-out;
+  animation-timeline: scroll();
+}
+
+@keyframes revealh {
+  from {
+    color: rgba(225, 232, 244, 0);
+
+  }
+  50% {
+    color: rgba(225, 232, 244, 0);
+
+  }
+  to {
+    color: rgba(225, 232, 244, 1);
+  }
+}
+
+@keyframes revealp {
+  0% {
+    color: rgba(225, 232, 244, 0);
+
+  }
+  75% {
+    color: rgba(225, 232, 244, 0);
+
+  }
+  to {
+    color: rgba(225, 232, 244, 1);
+  }
+}
+/*! Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(ellipse at top, rgb(3, 22, 31), rgb(0, 8, 11));
+}
+footer ul {
+  list-style-type: none;
+  margin-left: 30px;
+  display: flex;
+}
+footer ul li {
+  margin-left: 10px;
 }
