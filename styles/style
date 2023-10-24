@@ -1,11 +1,11 @@
 /*! Resetting values */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*! For smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -14,15 +14,14 @@ html {
 body {
   font-family: sans-serif;
 }
-/*! Disabling the scrollbar */
+
 ::-webkit-scrollbar {
   width: 0px;
 }
 
-/*! Nav */
 nav {
   position: fixed;
-  left: 90%;
+  left: 80%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -30,33 +29,13 @@ nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-li {
-  height: 40px;
-  text-align: center;
+  gap: 15px;
 }
 li a {
   color: rgb(225, 232, 244);
   text-decoration: none;
   font-size: 20px;
 }
-li:hover .progress {
-  width: 100%;
-}
-.progress {
-  margin: 3px 0 0 0;
-  border-top: 3px solid white;
-  border-radius: 10px;
-  width: 0%;
-  transition: 0.2s ease-out;
-}
-.index {
-  width: 100%;
-}
-
-/* Nav End */
-
 /*! Welcome Section - Header */
 
 header {
@@ -88,12 +67,12 @@ header a {
   0% {
     transform: translateY(0);
   }
-  80% {
+  50% {
+    font-size: 0px;
     color: rgba(225, 232, 244, 0);
   }
   100% {
-    transform: translateY(100vh);
-    color: rgba(225, 232, 244, 0);
+    transform: translateY(1000px);
   }
 }
 
