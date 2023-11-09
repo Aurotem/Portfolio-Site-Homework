@@ -18,11 +18,11 @@
 .a-center {
   align-items: center;
 }
+.t-center {
+  text-align: center;
+}
 .g-100vh {
   gap: 100vh;
-}
-.bg-color {
-  background: radial-gradient(ellipse at top, rgb(0, 24, 37), rgb(0, 8, 11));
 }
 
 /*! For smooth scrolling */
@@ -86,9 +86,6 @@ li:hover .progress {
 
 .welcome {
   height: 100dvh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: radial-gradient(ellipse at bottom, rgb(1, 40, 61), rgb(0, 8, 11));
 }
 .welcome-message {
@@ -131,10 +128,6 @@ li:hover .progress {
   padding: 0 10%;
   height: 100vh;
   background: radial-gradient(ellipse at top, rgb(1, 40, 61), rgb(0, 8, 11));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 .who-am-i p {
   font-size: 20px;
@@ -175,28 +168,9 @@ li:hover .progress {
     color: rgba(225, 232, 244, 1);
   }
 }
-/*! Footer */
-footer {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  background: radial-gradient(ellipse at top, rgb(0, 24, 37), rgb(0, 8, 11));
-}
-footer ul {
-  list-style-type: none;
-  margin-left: 30px;
-  display: flex;
-}
-footer ul li {
-  margin-left: 10px;
-  height: 30px;
-}
 
 /*!-------------- ABOUT ME PAGE ------------------------------- */
 .container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   width: 60%;
 }
 .about-me-message {
@@ -254,15 +228,12 @@ footer ul li {
 
 /*! Projects Page */
 #projects-select {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 90dvh;
 }
 
 .select-nav {
+  z-index: 4;
   position: fixed;
-  display: flex;
   gap: 50px;
   list-style: none;
   animation: snapToLeft 2s linear;
@@ -299,9 +270,6 @@ footer ul li {
 
 /*! Projects */
 #projects {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   gap: 100vh;
   padding: 100px;
 }
@@ -329,19 +297,13 @@ footer ul li {
   width: 90%;
 }
 .project {
-  display: flex;
-  align-items: center;
-  width: 95%;
+  width: 90%;
   gap: 20px;
   z-index: 1;
 }
 .project-info {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
   height: 100%;
-  width: 80dvw;
+  width: 80vw;
 }
 .project img {
   width: 600px;
@@ -362,7 +324,6 @@ footer ul li {
 /*! Contacts */
 #contact {
   height: 100vh;
-  text-align: center;
 }
 .contact-card {
 height: 300px;
