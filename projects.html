@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/stars.css" />
   </head>
   <body>
+    <div class="go-up"><a href="#"><i class="fa-solid fa-chevron-up fa-2xl"></i></a></div>
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
@@ -35,18 +37,13 @@
     <section id="projects-select">
       <ul class="select-nav">
         <li>
-          <a href="#react"
-            ><i class="fa-brands fa-react fa-2xl" style="color: #ffffff"></i
-          ></a>
-        </li>
-        <li>
-          <a href="#unity"
-            ><i class="fa-brands fa-unity fa-2xl" style="color: #ffffff"></i
-          ></a>
-        </li>
-        <li>
           <a href="#web"
             ><i class="fa-brands fa-js fa-2xl" style="color: #ffffff"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#react"
+            ><i class="fa-brands fa-react fa-2xl" style="color: #ffffff"></i
           ></a>
         </li>
         <li>
@@ -54,10 +51,15 @@
             ><i class="fa-brands fa-python fa-2xl" style="color: #ffffff"></i
           ></a>
         </li>
+        <li>
+          <a href="#unity"
+            ><i class="fa-brands fa-unity fa-2xl" style="color: #ffffff"></i
+          ></a>
+        </li>
       </ul>
     </section>
-    <section id="web">
-      <section id="projects">
+    <section class="flex g-100vh column" id="projects">
+      <section class="flex a-center j-center g-100vh" id="web">
         <div class="project">
           <img src="./images/box-shadow.png" alt="Project image" />
           <div class="project-info">
@@ -69,35 +71,8 @@
             >
           </div>
         </div>
-        <div class="project">
-          <img src="./images/simon-game.png" alt="Project image" />
-          <div class="project-info">
-            <h1 class="project-header">Simon Game</h1>
-            <i class="project-description"
-              >Classic simon game made with HTML, CSS, and Javascript.</i
-            >
-          </div>
-        </div>
-        <div class="project">
-          <img src="./images/news.png" alt="Project image" />
-          <div class="project-info">
-            <h1 class="project-header">News Page</h1>
-            <i class="project-description"
-              >A Challenge by Front-end mentor.</i
-            >
-          </div>
-        </div>
-        <div class="project">
-          <img src="./images/card-info.png" alt="Project image" />
-          <div class="project-info">
-            <h1 class="project-header">Credit Card Info</h1>
-            <i class="project-description"
-              >A Credit Card info page challenge by Front-end mentor. I did it with vanilla Javascript, HTML, and CSS.</i
-            >
-          </div>
-        </div>
       </section>
-      <section id="react">
+      <section class="flex a-center j-center g-100vh" id="react">
         <div class="project">
           <img src="./images/tic-tac-toe.png" alt="Project image" />
           <div class="project-info">
@@ -108,42 +83,28 @@
           </div>
         </div>
       </section>
-      <section id="python">
-        <div class="project">
-          <img src="./images/pong-game.png" alt="Project image" />
-          <div class="project-info">
-            <h1 class="project-header">Pong Game</h1>
-            <i class="project-description"
-              >The Pong Game I made with Python.</i
-            >
-          </div>
-        </div>
+      <section class="flex a-center j-center g-100vh" id="python">
         <div class="project">
           <img src="./images/password-manager.png" alt="Project image" />
           <div class="project-info">
             <h1 class="project-header">Password Manager</h1>
             <i class="project-description"
-              >A password-manager app made with python. You can store your user info, and then search for it. If you struggling with finding a password, you can generate it in this app too.</i
-            >
-          </div>
-        </div>
-        <div class="project">
-          <img src="./images/turtle-crossing.png" alt="Project image" />
-          <div class="project-info">
-            <h1 class="project-header">Turtle Cross Game</h1>
-            <i class="project-description"
-              >A basic turtle cross game made with python. The rectangles are cars and you have to avoid running to them.</i
+              >A password-manager app made with python. You can store your user
+              info, and then search for it. If you struggling with finding a
+              password, you can generate it in this app too.</i
             >
           </div>
         </div>
       </section>
-      <section id="unity">
+      <section class="flex a-center j-center g-100vh" id="unity">
         <div class="project">
           <img src="./images/metroidvania.png" alt="Project image" />
           <div class="project-info">
             <h1 class="project-header">Metroidvania Game</h1>
             <i class="project-description"
-              >A metroidvania game I made with unity. It has skills, minimap, map, pause menu, settings(so you can turn down the volume), checkpoints to save your game data, and basic enemy ai.</i
+              >A metroidvania game I made with unity. It has skills, minimap,
+              map, pause menu, settings(so you can turn down the volume),
+              checkpoints to save your game data, and basic enemy ai.</i
             >
           </div>
         </div>
@@ -173,6 +134,6 @@
     ></script>
 
     <!--! My Script -->
-    <script src="./index.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
