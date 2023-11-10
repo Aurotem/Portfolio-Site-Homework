@@ -36,6 +36,9 @@ body {
   color: rgb(225, 232, 244);
   background-color: black;
 }
+.menu {
+  display: none;
+}
 /*! Disabling the scrollbar */
 ::-webkit-scrollbar {
   width: 0px;

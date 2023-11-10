@@ -1,0 +1,56 @@
+@media screen and (max-width: 1160px) {
+  /*! Projects page */
+  .project img {
+    width: 350px;
+    height: 175px;
+  }
+  .project-description {
+    font-size: 16px;
+  }
+  .project-header {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 920px) {
+  /*! Projects page */
+  .project {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project-header {
+    width: 100%;
+  }
+  .project.project-description {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 470px) {
+  /*! Projects page */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    left: 0px;
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: row;
+    text-align: center;
+    gap: 40px;
+  }
+  .go-up {
+    display: none;
+  }
+  /*! About-me Page */
+  .container {
+    width: 90%;
+  }
+  .about-me-paragraph {
+    font-size: 16px;
+  }
+  .about-me-message {
+    font-size: 40px;
+    margin: 50px 0 10px 0;
+  }
+}
